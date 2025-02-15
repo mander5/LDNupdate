@@ -2,15 +2,27 @@ import { motion } from 'framer-motion';
 import heroImage from './assets/hero-image.jpg';
 import logo from './assets/LDNlogowhite.png';
 import logoBlack from './assets/LDNlogo.png';
+import { useState } from 'react';
 
 export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      {/* Header Section */}
+      {/* HEADER SECTION */}
       <header className='header'>
         <div className='header-content'>
           <img src={logo} alt='LDN Sport Social Logo' className='logo' />
-          <nav className='nav-links'>
+
+          {/* Burger Menu Button */}
+          <button
+            className='burger-menu'
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+
+          {/* Navigation Links */}
+          <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <a href='#home'>Home</a>
             <a href='#about'>About Us</a>
             <a href='#services'>Services</a>

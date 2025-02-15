@@ -7,14 +7,13 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: black;
-  /* position: sticky; */
+  position: relative;
   top: 0;
   z-index: 1000;
 }
@@ -22,7 +21,7 @@ body {
 .header-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  width: 100%;
 }
 
 .logo {
@@ -30,8 +29,13 @@ body {
   object-fit: contain;
 }
 
+/* Default Navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
 .nav-links a {
-  margin: 0 15px;
   color: white;
   text-decoration: none;
   font-size: 1rem;
@@ -44,6 +48,45 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Burger Menu Button */
+.burger-menu {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block; /* Show burger menu on small screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show when menuOpen is true */
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    display: block;
+  }
 }
 
 /* Hero Section */
