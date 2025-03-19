@@ -42,7 +42,6 @@ body {
 }
 
 .cta-button {
-  /* padding: 10px 20px; */
   background-color: yellow;
   color: black;
   border: none;
@@ -197,15 +196,6 @@ body {
 .cta h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-}
-
-.cta-button {
-  padding: 10px 20px;
-  background-color: black;
-  color: yellow;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 /* Footer */
