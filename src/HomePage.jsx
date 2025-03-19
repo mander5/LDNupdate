@@ -94,7 +94,7 @@ export default function HomePage() {
       <section className='cta'>
         <h2>Let’s Work Together!</h2>
         <p>Get in touch and take your brand to the next level.</p>
-        <button className='cta-button'>Contact Us</button>
+        <button className='cta-button-2'>Contact Us</button>
       </section>
 
       {/* Footer Section */}

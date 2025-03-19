@@ -198,6 +198,15 @@ body {
   margin-bottom: 10px;
 }
 
+.cta-button-2 {
+  padding: 10px 20px;
+  background-color: black;
+  color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
