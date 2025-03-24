@@ -34,7 +34,15 @@ export default function HomePage() {
             <a href='#about'>About Us</a>
             <a href='#services'>Services</a>
             <a href='#contact'>Contact</a>
-            <button className='cta-button'>Get Started</button>
+            <button
+              className='cta-button'
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Get Started
+            </button>
           </nav>
         </div>
       </header>
@@ -51,7 +59,9 @@ export default function HomePage() {
         <div className='hero-content'>
           <h1>Elevate Your Game</h1>
           <p>Connecting brands with passionate sports fans worldwide</p>
-          <button className='hero-button'>Learn More</button>
+          <a href='#contact' className='hero-button'>
+            Learn More
+          </a>
         </div>
       </section>
 

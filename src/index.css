@@ -131,6 +131,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* About Section */
@@ -234,4 +235,8 @@ body {
 .company-info p {
   font-size: small;
   line-height: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
