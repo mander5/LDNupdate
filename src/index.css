@@ -86,6 +86,10 @@ body {
     margin: 10px 0;
     display: block;
   }
+  .cta-button {
+    font-size: 1.25rem; /* Increase the font size on smaller screens */
+    padding: 15px 30px; /* Adjust padding for a bigger button */
+  }
 }
 
 /* Hero Section */
