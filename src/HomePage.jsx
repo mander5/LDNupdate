@@ -5,8 +5,13 @@ import logoBlack from './assets/LDNlogo.png';
 import { useState } from 'react';
 import { FaTiktok, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import ContactModal from './ContactModal.jsx';
 
 export default function HomePage() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openContact = () => setModalOpen(true);
+  const closeContact = () => setModalOpen(false);
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
@@ -91,12 +96,14 @@ export default function HomePage() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className='cta'>
+      <section className='cta' id='contact'>
         <h2>Let’s Work Together!</h2>
         <p>Get in touch and take your brand to the next level.</p>
-        <button className='cta-button-2'>Contact Us</button>
+        <button onClick={openContact} className='cta-button-2'>
+          Contact Us
+        </button>
       </section>
-
+      <ContactModal isOpen={isModalOpen} onClose={closeContact} />
       {/* Footer Section */}
       <footer className='footer'>
         <div className='footer-content'>
