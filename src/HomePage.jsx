@@ -173,6 +173,13 @@ export default function HomePage() {
             <a href='#about'>About Us</a>
             <a href='#services'>Services</a>
             <a href='#contact'>Contact</a>
+            <a
+              href='https://raw.githubusercontent.com/mander5/LDNsportSocial/master/src/assets/LDNSportSocialTermsAndConditions.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <p>Terms & Conditions</p>
+            </a>
           </nav>
         </div>
       </footer>
