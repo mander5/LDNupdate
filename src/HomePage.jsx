@@ -174,7 +174,7 @@ export default function HomePage() {
             <a href='#services'>Services</a>
             <a href='#contact'>Contact</a>
             <a
-              href='https://raw.githubusercontent.com/mander5/LDNsportSocial/master/src/assets/LDNSportSocialTermsAndConditions.pdf'
+              href='https://raw.githubusercontent.com/mander5/LDNupdate/blob/main/src/assets/LDNSportSocialTermsAndConditions.docx.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
