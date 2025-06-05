@@ -18,7 +18,7 @@ export default function HomePage() {
       {/* HEADER SECTION */}
       <header className='header'>
         <div className='header-content'>
-          <img src={logo} alt='LDN Sport Social Logo' className='logo' />
+          <img src={logo} alt='LDN Sport Social' className='logo' />
 
           {/* Burger Menu Button */}
           <button
