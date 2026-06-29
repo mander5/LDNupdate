@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import heroImage from './assets/hero-image.jpg';
+import heroImage from './assets/allypally.jpg';
 import logo from './assets/LDNlogowhite.png';
 import logoBlack from './assets/LDNlogo.png';
 import { useState } from 'react';
